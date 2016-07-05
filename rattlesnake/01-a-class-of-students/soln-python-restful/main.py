@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-import re,sys
+import re
+import sys
 
 # The "database"
 data = {}
@@ -25,7 +26,8 @@ def quit_handler(args):
                 f.write(','.join(row))
                 f.write("\n")
 
-    sys.exit("Goodbye m'lord!")
+    print "Goodbye m'lord!"
+    sys.exit()
 
 def add_get_handler(args):
     rep = "Enter Name, Phone, Marks1, Marks2, Marks3, Marks4: "
